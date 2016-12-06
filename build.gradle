@@ -16,11 +16,19 @@ buildscript {
     }
 }
 
+apply plugin: "java"
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'maven'
 apply plugin: 'net.researchgate.release'
 apply from: "settings/secret.gradle"
 
 repositories {
     mavenCentral()
+}
+
+configurations {
+    deployerJars
 }
 
 dependencies {
