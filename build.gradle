@@ -64,5 +64,7 @@ uploadArchives {
 
 release {
     tagTemplate = "v${version}"
-    requireBranch = 'master|develop'
+    git {
+        requireBranch = 'master|develop'
+    }
 }
