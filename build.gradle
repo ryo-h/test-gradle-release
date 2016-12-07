@@ -1,5 +1,4 @@
 group 'com.example'
-version "${version}"
 
 apply plugin: 'java'
 
@@ -65,6 +64,6 @@ uploadArchives {
 release {
     tagTemplate = "v${version}"
     git {
-        requireBranch = 'master|develop'
+        requireBranch = 'release'
     }
 }
