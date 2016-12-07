@@ -68,4 +68,4 @@ release {
     }
 }
 
-// afterReleaseBuild.dependsOn uploadArchives
+afterReleaseBuild.dependsOn uploadArchives
