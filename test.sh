@@ -1,7 +1,7 @@
 #!/bin/bash
 tags=(`git tag | grep ^v[0-9] | sed -e "s/v//" | sort -n -r`)
 
-if [ "${#tagval[@]}" -gt "1" ]
+if [ "${#tags[@]}" -gt "1" ]
 then
   latest=${tags[0]}
   echo ${latest}
